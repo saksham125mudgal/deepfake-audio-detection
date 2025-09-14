@@ -1,0 +1,20 @@
+dataset:
+  name: "ASVspoof2019_LA"
+  sampling_rate: 16000
+
+feature_params:
+  sr: 16000
+  n_mfcc: 40
+  max_len: 500
+  n_deltas: 2
+
+model_params:
+  lstm_units: 128
+  dense_units: 64
+  dropout_rate: 0.3
+  learning_rate: 0.001
+
+training_params:
+  batch_size: 32
+  epochs: 50
+  early_stopping_patience: 5
